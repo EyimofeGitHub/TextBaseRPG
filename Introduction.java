@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Kelniar_Realm;
+package Keisus_Realm;
 
 import java.util.Scanner;
 
@@ -28,13 +28,14 @@ public class Introduction
     {
         {
             System.out.println(Greeting);
+            //This "try" segment is to delay the oncoming text on screen. I attempt to give it more of a slow opening RPG feel.
             try{
-                Thread.sleep( 1500);
+                Thread.sleep( 1500); // to imagine the game opening will the title card I will add soon but after open with "Welcome to..."
 
             }    catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
-            System.out.println(Location);
+            System.out.println(Location); //Then the name of the game.
 
             try{
                 Thread.sleep( 2000);
@@ -83,17 +84,18 @@ public class Introduction
         System.out.println
         ("""
 
-
         Rogue: A slient Assassin born into the life of secrecy and stealth.
 
-        Paladin: A holy knight taking on the brunt of attacks for their comrades""");
+        Paladin: A holy knight taking on the brunt of attacks for their comrades
+    
+        """);
 
         String SelectedClass;
 
         int Selection = scanner.nextInt();
 
         switch (Selection) {
-            case 1 -> SelectedClass = info.Class1;
+            case 1 -> SelectedClass = info.Class1; // depending on the selected class it will display the classes stats and the name of the class
             case 2 -> SelectedClass = info.Class2;
             default -> {
                 System.out.println("Invalid selection");
@@ -101,9 +103,10 @@ public class Introduction
             }
         }
         info.Stats(SelectedClass);
-        // once user has chgosen their role link it back to Class choice and then display the stats.
-        // also make a return choice menu if the user want to see the stats of the other role
-        // or have the stats displayed under each role with brackets dividing for viewing purposese
+        /*Future Additions
+        make a return choice menu if the user want to see the stats of the other role
+        or have the stats displayed under each role with brackets dividing for viewing purposese
+         */
 
 
     }
