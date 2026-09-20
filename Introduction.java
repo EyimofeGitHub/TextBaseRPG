@@ -82,6 +82,9 @@ public class Introduction
         }
 
         System.out.println
+        /* this gives the "player" more of an idea of what class they will be choosing weather they want to be more of a glass cannon or a tanky player
+        I will probably add another class as some sort of middle ground as they will act like difficulty settings aswell.
+        */
         ("""
 
         Rogue: A slient Assassin born into the life of secrecy and stealth.
