@@ -28,7 +28,7 @@ public class Introduction
     {
         {
             System.out.println(Greeting);
-            //This "try" segment is to delay the oncoming text on screen. I attempt to give it more of a slow opening RPG feel.
+            //This "try" segment is to delay the oncoming text on screen. I attempt to give it more of a slow opening RPG feel and will be use quite frequently to fit the style.
             try{
                 Thread.sleep( 1500); // to imagine the game opening will the title card I will add soon but after open with "Welcome to..."
 
