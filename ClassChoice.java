@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package Kelniar_Realm;
+package Keisus_Realm;
 
 /**
  *
@@ -21,21 +21,21 @@ public void Stats(String SelectedClass)
     int attack = 0;
     int defence = 0;
 
-
+    //Class stats for Rogue, being light weight and a slightly heavy hitter
     if(SelectedClass.equals(Class1))
     {
         health = 85;
-        attack = 20;
+        attack = 15;
         defence = 15;
     }
-
+    //Class stats for Paladin, heavy, "tank" like role. Good on health and defence
     else if(SelectedClass.equals(Class2))
     {
         health = 115;
         attack = 10;
         defence = 45;
     }
-
+    //This will display the selected class along with the stats of ATK, HP, DF.
     System.out.println("Selected Class: " + SelectedClass);
     System.out.println("Health: " + health);
     System.out.println("Attack: " + attack);
@@ -44,3 +44,4 @@ public void Stats(String SelectedClass)
 
 
 }
+
