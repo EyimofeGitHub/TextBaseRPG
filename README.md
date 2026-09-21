@@ -8,7 +8,7 @@ A mini text-based adventure game featuring a turn-based combat system, diverse e
 * **Boss Encounters:** Includes a challenging side-boss and a climactic final boss.
 
 ## 🛠️ Future Roadmap
-- [ ] **Title Card:** Implement an ASCII art title screen.
+- [x] **Title Card:** Implement an ASCII art title screen.
 - [ ] **Inventory System:** Add support for potions and equipment.
 - [ ] **Currency System:** Implement a gold-earning mechanic from defeated mobs.
 - [ ] **Item Shop:** Create a store to purchase upgrades using earned gold.
