@@ -16,7 +16,19 @@ import java.util.Scanner;
 public class Introduction 
 {
     public static String Greeting = "Welcome to";
-    public static String Location = "Keisu's Realm!";
+    public static String Location = """
+                                    +=======================================================================================+ 
+                                    |                                                                                       |
+                                    |   __          .__                      __________              .__                    |
+                                    |   |  | __ ____ |__| ________ __  ______ \\______   \\ ____ _____  |  |   _____          |
+                                    |   |  |/ // __ \\|  |/  ___/  |  \\/  ___/  |       _// __ \\\\__  \\ |  |  /     \\         |
+                                    |   |    <\\  ___/|  |\\___ \\|  |  /\\___ \\   |    |   \\  ___/ / __ \\|  |_|  Y Y  \\        |
+                                    |   |__|_ \\\\___  >__/____  >____//____  >  |____|_  /\\___  >____  /____/__|_|  /        |
+                                    |        \\/    \\/        \\/           \\/          \\/     \\/     \\/           \\/         |
+                                    |                                                                                       |
+                                    +=======================================================================================+"""
+    ;// I'm using a text block for the title boarder and title inside.
+    
     public static String Role1 = "Rogue: A slient Assassin born into the life of secrecy and stealth.";
     public static String Role2 = "Paladin: A holy knight taking on the brunt of attacks for their comrades";
     static Scanner scanner = new Scanner(System.in);
@@ -30,7 +42,7 @@ public class Introduction
             System.out.println(Greeting);
             //This "try" segment is to delay the oncoming text on screen. I attempt to give it more of a slow opening RPG feel and will be use quite frequently to fit the style.
             try{
-                Thread.sleep( 1500); // to imagine the game opening will the title card I will add soon but after open with "Welcome to..."
+                Thread.sleep( 1750); // to imagine the game opening will the title card I will add soon but after open with "Welcome to..."
 
             }    catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -43,7 +55,7 @@ public class Introduction
             }    catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
-            System.out.println("You are set in a mystic world. Destined to defeat the FAIRY King; Bixlou. The lost souls of Terina count you, Goodluck Travler "); 
+            System.out.println("You are set in a mystic world. Destined to defeat the FAIRY King; Bixlou. The lost souls of Valerius count you, Goodluck Travler "); 
             
             try{
                 Thread.sleep( 1750);
@@ -82,10 +94,8 @@ public class Introduction
         }
 
         System.out.println
-        /* this gives the "player" more of an idea of what class they will be choosing weather they want to be more of a glass cannon or a tanky player
-        I will probably add another class as some sort of middle ground as they will act like difficulty settings aswell.
-        */
         ("""
+
 
         Rogue: A slient Assassin born into the life of secrecy and stealth.
 
