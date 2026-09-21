@@ -1,26 +1,33 @@
-TextBaseRPG ⚔️
-I’ve always loved RPGs as a kid, so I decided to build a mini text-based adventure. This project features a turn-based combat system, multiple enemy types, and challenging boss encounters.
+# Text-Based RPG ⚔️
 
-🎮 Current Features
-Combat System: Turn-based battles with attack, defend, and heal mechanics.
-Enemies: Two unique mobs to test your skills.
-Bosses: A challenging side-boss and a climactic final boss.
+A mini text-based adventure game featuring a turn-based combat system, diverse enemy types, and challenging boss encounters. This project was built to explore game logic and state management in Java.
 
-🛠️ Future Roadmap
-[ ] Title Card: Adding an ASCII art title screen.
-[ ] Inventory System: Adding items like potions and weapons.
-[ ] Currency System: Gain gold from slaying mobs.
-[ ] Item Shop: Spend your hard-earned gold on upgrades.
+## 🎮 Features
+* **Combat System:** Turn-based battles featuring attack, defend, and heal mechanics.
+* **Enemy Variety:** Multiple unique mobs to test player skills.
+* **Boss Encounters:** Includes a challenging side-boss and a climactic final boss.
 
-🚀 How to Play
-1. Clone the repository:
-   ```bash
-   git clone [your-repo-link]
-2. Compile and run the code:
-  javac Main.java
-  java Main
-3. Follow the on-screen prompts to navigate the world and battle enemies.
+## 🛠️ Future Roadmap
+- [ ] **Title Card:** Implement an ASCII art title screen.
+- [ ] **Inventory System:** Add support for potions and equipment.
+- [ ] **Currency System:** Implement a gold-earning mechanic from defeated mobs.
+- [ ] **Item Shop:** Create a store to purchase upgrades using earned gold.
 
+## 🚀 How to Play
+Ensure you have the **Java Development Kit (JDK)** installed.
 
-⌨️ Controls
-(Coming soon - stay tuned!)
+* **Clone the repository:**
+  `git clone https://github.com/EyimofeGitHub/TextBaseRPG.git`
+* **Navigate to the project directory:**
+  `cd TextBaseRPG`
+* **Compile the source code:**
+  `javac Main.java`
+* **Execute the game:**
+  `java Main`
+* **Gameplay:** Follow the on-screen prompts to navigate the world and engage in combat.
+
+## ⌨️ Controls
+* The game is fully interactive via console input. Simply type your choice when prompted and press **Enter**.
+
+---
+*Check out my other projects at: [EyimofeGitHub Repositories](https://github.com/EyimofeGitHub?tab=repositories)*
