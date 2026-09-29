@@ -1,33 +1,67 @@
 # Text-Based RPG ⚔️
 
-A mini text-based adventure game featuring a turn-based combat system, diverse enemy types, and challenging boss encounters. This project was built to explore game logic and state management in Java.
+A text-based adventure RPG featuring turn-based combat, multiple enemy types, class-based characters, and boss encounters. This project is being developed in Java to practise object-oriented programming, game logic, and state management.
+
+## 📌 Project Status
+
+🚧 **In Development**
+
+This project is actively being developed as a personal Java project. New gameplay systems, improvements, and refactoring will be added as development continues.
 
 ## 🎮 Features
-* **Combat System:** Turn-based battles featuring attack, defend, and heal mechanics.
-* **Enemy Variety:** Multiple unique mobs to test player skills.
-* **Boss Encounters:** Includes a challenging side-boss and a climactic final boss.
 
-## 🛠️ Future Roadmap
-- [x] **Title Card:** Implement an ASCII art title screen.
-- [ ] **Inventory System:** Add support for potions and equipment.
-- [ ] **Currency System:** Implement a gold-earning mechanic from defeated mobs.
-- [ ] **Item Shop:** Create a store to purchase upgrades using earned gold.
+- Character class selection
+- Turn-based combat
+- Attack, defend, and heal mechanics
+- Multiple enemy types
+- Boss encounters
+
+## 🛠️ Technologies
+
+- Java
+- Object-Oriented Programming
+- Git/GitHub
+
+## 🛠️ Development Roadmap
+
+### Gameplay
+- [x] Character class selection
+- [ ] Turn-based combat
+- [ ] Attack mechanic
+- [ ] Defence mechanic
+- [ ] Healing mechanic
+- [ ] Enemy encounters
+- [ ] Boss encounters
+
+### Player Systems
+- [ ] Inventory system
+- [ ] Equipment system
+- [ ] Currency system
+- [ ] Item shop
+
+### Improvements
+- [ ] Improve input validation
+- [ ] Refactor repeated code
+- [ ] Add save/load functionality
+- [ ] Add automated tests
+
+## 📚 What I'm Learning
+
+This project is being used to develop my understanding of:
+
+- Object-oriented programming
+- Class and object design
+- Game state management
+- Input handling
+- Code organisation
+- Debugging and problem solving
+- Git and version control
 
 ## 🚀 How to Play
-Ensure you have the **Java Development Kit (JDK)** installed.
 
-* **Clone the repository:**
-  `git clone https://github.com/EyimofeGitHub/TextBaseRPG.git`
-* **Navigate to the project directory:**
-  `cd TextBaseRPG`
-* Compile the source code: `javac *.java`
-  
-* Execute the game: `java TextRPG`
-  
-* **Gameplay:** Follow the on-screen prompts to navigate the world and engage in combat.
+Ensure you have the Java Development Kit (JDK) installed.
 
-## ⌨️ Controls
-* The game is fully interactive via console input. Simply type your choice when prompted and press **Enter**.
+1. Clone the repository:
 
----
-*Check out my other projects at: [EyimofeGitHub Repositories](https://github.com/EyimofeGitHub?tab=repositories)*
+```bash
+git clone https://github.com/EyimofeGitHub/TextBaseRPG.git
