@@ -20,10 +20,10 @@ Ensure you have the **Java Development Kit (JDK)** installed.
   `git clone https://github.com/EyimofeGitHub/TextBaseRPG.git`
 * **Navigate to the project directory:**
   `cd TextBaseRPG`
-* **Compile the source code:**
-  `javac Main.java`
-* **Execute the game:**
-  `java Main`
+* Compile the source code: `javac *.java`
+  
+* Execute the game: `java TextRPG`
+  
 * **Gameplay:** Follow the on-screen prompts to navigate the world and engage in combat.
 
 ## ⌨️ Controls
