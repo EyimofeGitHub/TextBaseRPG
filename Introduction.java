@@ -27,10 +27,12 @@ public class Introduction
                                     |        \\/    \\/        \\/           \\/          \\/     \\/     \\/           \\/         |
                                     |                                                                                       |
                                     +=======================================================================================+"""
-    ;// I'm using a text block for the title boarder and title inside.
+    ;
+    // I'm using a text block for the title boarder and title inside.
     
-    public static String Role1 = "Rogue: A slient Assassin born into the life of secrecy and stealth.";
-    public static String Role2 = "Paladin: A holy knight taking on the brunt of attacks for their comrades";
+    public static String Role1 = "Soldier: An upfront attacker who relies on strength and direct combat.";
+    public static String Role2 = "Knight: A defensive tank who can also deliver heavy hits.";
+    public static String Role3 = "Ranger: A long-range fighter with light defensive abilities.";
     static Scanner scanner = new Scanner(System.in);
     static ClassChoice info = new ClassChoice();
 
@@ -97,10 +99,11 @@ public class Introduction
         ("""
 
 
-        Rogue: A slient Assassin born into the life of secrecy and stealth.
+        Soldier: An upfront attacker who relies on strength and direct combat.
 
-        Paladin: A holy knight taking on the brunt of attacks for their comrades
-    
+        Knight: A defensive tank who can also deliver heavy hits.
+
+        Ranger: A long-range fighter with light defensive abilities.
         """);
 
         String SelectedClass;
@@ -110,6 +113,7 @@ public class Introduction
         switch (Selection) {
             case 1 -> SelectedClass = info.Class1; // depending on the selected class it will display the classes stats and the name of the class
             case 2 -> SelectedClass = info.Class2;
+            case 3 -> SelectedClass = info.Class3;
             default -> {
                 System.out.println("Invalid selection");
                 return;
@@ -120,11 +124,11 @@ public class Introduction
         make a return choice menu if the user want to see the stats of the other role
         or have the stats displayed under each role with brackets dividing for viewing purposese
          */
+        
 
 
     }
 
 }   
-
 
 
