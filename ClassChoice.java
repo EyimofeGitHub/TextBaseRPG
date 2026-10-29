@@ -5,49 +5,86 @@
 
 package Keisus_Realm;
 
+import java.util.Scanner;
+
 /**
- *
  * @author eyimo
  */
 public class ClassChoice {
-public String Class1 = "Soldier";
-public String Class2 = "Warrior";
-public String Class3 = "Ranger";
-public static Object SelectedClass;
+    private static final Scanner scanner = new Scanner(System.in);
 
-public void Stats(String SelectedClass)
-{
-    int health = 0;
-    int attack = 0;
-    int defence = 0;
+    public String Class1 = "Warrior";
+    public String Class2 = "Knight";
+    public String Class3 = "Ranger";
 
-    // Warrior: upfront attack-based class
-    if(SelectedClass.equals(Class1))
-    {
-        health = 100;
-        attack = 30;
-        defence = 15;
+    private String selectedClass;
+    private int health;
+    private int attack;
+    private int defence;
+
+    public void CharacterOpt() {
+        while (true) {
+            System.out.println("\nCharacter menu");
+            System.out.println("1. Choose class");
+            System.out.println("2. View current stats");
+            System.out.println("3. Continue");
+            System.out.print("Choose an option: ");
+
+            int selection = scanner.nextInt();
+
+            switch (selection) {
+                case 1 -> chooseClass();
+                case 2 -> Stats();
+                case 3 -> {
+                    if (selectedClass == null) {
+                        System.out.println("Please choose a class before continuing.");
+                    } else {
+                        return;
+                    }
+                }
+                default -> System.out.println("Invalid selection. Please try again.");
+            }
+        }
     }
-    // Knight: defensive tank with a strong attack
-    else if(SelectedClass.equals(Class2))
-    {
-        health = 130;
-        attack = 22;
-        defence = 40;
-    }
-    // Ranger: long-range class with light defence
-    else if(SelectedClass.equals(Class3))
-    {
-        health = 80;
-        attack = 25;
-        defence = 20;
-    }
-    //This will display the selected class along with the stats of ATK, HP, DF.
-    System.out.println("Selected Class: " + SelectedClass);
-    System.out.println("Health: " + health);
-    System.out.println("Attack: " + attack);
-    System.out.println("Defence: " + defence);
-}
 
+    private void chooseClass() {
+        System.out.println("""
 
+                Warrior: Brave and strong, a front line fighter with a balance of attack and defence.
+
+                Knight: A heavily armored tank, able to take a lot of damage and protect those weaker than themselves.
+
+                Ranger: A long range fighter, able to attack from a distance and avoid damage with their agility.
+                """);
+        System.out.print("Choose a class (1, 2 or 3): ");
+
+        int selection = scanner.nextInt();
+
+        switch (selection) {
+            case 1 -> setClass(Class1, 100, 30, 15);
+            case 2 -> setClass(Class2, 130, 22, 40);
+            case 3 -> setClass(Class3, 80, 25, 20);
+            default -> System.out.println("Invalid selection. Please try again.");
+        }
+    }
+
+    private void setClass(String className, int classHealth, int classAttack, int classDefence) {
+        selectedClass = className;
+        health = classHealth;
+        attack = classAttack;
+        defence = classDefence;
+        System.out.println("Class selected: " + selectedClass);
+    }
+
+    public void Stats() {
+        if (selectedClass == null) {
+            System.out.println("No class selected yet.");
+            return;
+        }
+
+        System.out.println("Selected Class: " + selectedClass);
+        System.out.println("Health: " + health);
+        System.out.println("Attack: " + attack);
+        System.out.println("Defence: " + defence);
+    }
 }
