@@ -6,15 +6,11 @@ package Keisus_Realm;
 
 import java.util.Scanner;
 
-
-
 /**
- *
  * @author eyimo
- * 
  */
-public class Introduction 
-{
+public class Introduction {
+
     public static String Greeting = "Welcome to";
     public static String Location = """
                                     +=======================================================================================+ 
@@ -26,92 +22,77 @@ public class Introduction
                                     |   |__|_ \\\\___  >__/____  >____//____  >  |____|_  /\\___  >____  /____/__|_|  /        |
                                     |        \\/    \\/        \\/           \\/          \\/     \\/     \\/           \\/         |
                                     |                                                                                       |
-                                    +=======================================================================================+"""
-    ;
-    // I'm using a text block for the title boarder and title inside.
-    
-    public static String Role1 = "Soldier: An upfront attacker who relies on strength and direct combat.";
-    public static String Role2 = "Knight: A defensive tank who can also deliver heavy hits.";
-    public static String Role3 = "Ranger: A long-range fighter with light defensive abilities.";
+                                    +=======================================================================================+""";
+
+    // Text block used for the title border and title.
+    public static String Role1 = "Rogue: A slient Assassin born into the life of secrecy and stealth.";
+    public static String Role2 = "Paladin: A holy knight taking on the brunt of attacks for their comrades";
+
     static Scanner scanner = new Scanner(System.in);
     static ClassChoice info = new ClassChoice();
 
-    
-    
-    public static void Display()
-    {
-        {
-            System.out.println(Greeting);
-            //This "try" segment is to delay the oncoming text on screen. I attempt to give it more of a slow opening RPG feel and will be use quite frequently to fit the style.
-            try{
-                Thread.sleep( 1750); // to imagine the game opening will the title card I will add soon but after open with "Welcome to..."
+    public static void Display() {
+        System.out.println(Greeting);
 
-            }    catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-            System.out.println(Location); //Then the name of the game.
+        // Delay the opening text to create a slower RPG-style introduction.
+        try {
+            Thread.sleep(1750);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println(Location);
 
-            try{
-                Thread.sleep( 2000);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("You are set in a mystic world. Destined to defeat the FAIRY King; Bixlou. The lost souls of Valerius count you, Goodluck Travler ");
 
-            }    catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-            System.out.println("You are set in a mystic world. Destined to defeat the FAIRY King; Bixlou. The lost souls of Valerius count you, Goodluck Travler "); 
-            
-            try{
-                Thread.sleep( 1750);
+        try {
+            Thread.sleep(1750);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("[TRAVELLING TO TAVERN...]");
 
-            }    catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-            System.out.println("[TRAVELLING TO TAVERN...]");
-
-            try{
-                Thread.sleep( 1750);
-
-            }    catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-
-
+        try {
+            Thread.sleep(1750);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
     }
-    // add a menu describing both class options potentionally future ones aswell
-    public static void CharacterOpt()
-    {
+
+    // Display the available character classes and show the selected class stats.
+    public static void CharacterOpt() {
         try {
             Thread.sleep(750);
         } catch (InterruptedException e) {
-        Thread.currentThread().interrupt();
+            Thread.currentThread().interrupt();
         }
 
-
-        System.out.print("G'morning Traveller! welcome to the tavern Hall of Scalvondir. What are you enrolling as? (press 1 or 2): ");
-        
+        System.out.print("G'morning Traveller! welcome to the tavern Hall of Scalvondir. What are you enrolling as? (press 1, 2 or 3): ");
         try {
             Thread.sleep(750);
         } catch (InterruptedException e) {
-        Thread.currentThread().interrupt();
+            Thread.currentThread().interrupt();
         }
 
-        System.out.println
-        ("""
+        System.out.println("""
 
+        Warrior: Brave and strong, a front line fighter with a balance of attack and defence.
 
-        Soldier: An upfront attacker who relies on strength and direct combat.
+        Knight: A heavily armored tank, able to take a lot of damage and protect those weaker than themselves.
 
-        Knight: A defensive tank who can also deliver heavy hits.
-
-        Ranger: A long-range fighter with light defensive abilities.
+        Ranger: A long range fighter, able to attack from a distance and avoid damage with their agility.
         """);
 
         String SelectedClass;
-
         int Selection = scanner.nextInt();
 
         switch (Selection) {
-            case 1 -> SelectedClass = info.Class1; // depending on the selected class it will display the classes stats and the name of the class
+            // Display the selected class and its stats.
+            case 1 -> SelectedClass = info.Class1;
             case 2 -> SelectedClass = info.Class2;
             case 3 -> SelectedClass = info.Class3;
             default -> {
@@ -120,15 +101,6 @@ public class Introduction
             }
         }
         info.Stats(SelectedClass);
-        /*Future Additions
-        make a return choice menu if the user want to see the stats of the other role
-        or have the stats displayed under each role with brackets dividing for viewing purposese
-         */
-        
-
-
+        System.out.println("Selected Class: " + SelectedClass);
     }
-
-}   
-
-
+}
