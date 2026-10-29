@@ -23,7 +23,8 @@ public class TextRPG {
 
             if (startGame.equalsIgnoreCase("yes")) {
                 Introduction.Display();
-                Introduction.CharacterOpt();
+                ClassChoice classChoice = new ClassChoice();
+                classChoice.CharacterOpt();
                 break;
             } else if (startGame.equalsIgnoreCase("no")) {
                 System.out.println("See you soon Travelor!");
@@ -32,5 +33,6 @@ public class TextRPG {
                 System.out.println("Invalid choice. Please enter yes or no.");
             }
         }
+        }
+
     }
-}
