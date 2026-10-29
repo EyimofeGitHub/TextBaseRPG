@@ -10,10 +10,10 @@ package Keisus_Realm;
  * @author eyimo
  */
 public class ClassChoice {
-public  String Class1 = "Rogue";
+public String Class1 = "Soldier";
+public String Class2 = "Warrior";
+public String Class3 = "Ranger";
 public static Object SelectedClass;
-public  String Class2 = "Paladin";
-
 
 public void Stats(String SelectedClass)
 {
@@ -21,19 +21,26 @@ public void Stats(String SelectedClass)
     int attack = 0;
     int defence = 0;
 
-    //Class stats for Rogue, being light weight and a slightly heavy hitter
+    // Warrior: upfront attack-based class
     if(SelectedClass.equals(Class1))
     {
-        health = 85;
-        attack = 15;
+        health = 100;
+        attack = 30;
         defence = 15;
     }
-    //Class stats for Paladin, heavy, "tank" like role. Good on health and defence
+    // Knight: defensive tank with a strong attack
     else if(SelectedClass.equals(Class2))
     {
-        health = 115;
-        attack = 10;
-        defence = 45;
+        health = 130;
+        attack = 22;
+        defence = 40;
+    }
+    // Ranger: long-range class with light defence
+    else if(SelectedClass.equals(Class3))
+    {
+        health = 80;
+        attack = 25;
+        defence = 20;
     }
     //This will display the selected class along with the stats of ATK, HP, DF.
     System.out.println("Selected Class: " + SelectedClass);
@@ -44,4 +51,3 @@ public void Stats(String SelectedClass)
 
 
 }
-
