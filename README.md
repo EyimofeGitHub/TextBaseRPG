@@ -43,7 +43,6 @@ This project is actively being developed as a personal Java project. New gamepla
 - [x] Improve input validation
 - [x] Refactor repeated code
 - [ ] Add save/load functionality
-- [ ] Add automated tests
 
 ## 📚 What I'm Learning
 
